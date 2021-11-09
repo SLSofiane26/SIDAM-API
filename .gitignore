@@ -1,0 +1,8 @@
+/node_modules
+/autorisation/*
+/privkey.pem
+/cert.pem
+privkey.pem
+cert.pemsendgrid.env
+/notification/*
+/PDF/*

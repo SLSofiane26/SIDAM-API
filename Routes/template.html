@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Extension de garantie</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+
+<style type="text/css">
+    body {
+        background-image: url('https://sidam.suncha.fr/api/PDF/fond.jpg');
+        font-family: 'Poppins';
+    }
+
+    .title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        flex-direction: column;
+        background-color: #606A28;
+        width: 100%;
+        text-align: center;
+        color: white;
+        font-family: 'Poppins';
+    }
+
+    .titleb {
+        color: white
+    }
+
+    .titre {
+        text-align: center;
+        color: white
+    }
+</style>
+
+<body>
+    <div>
+        <div>
+            <p>Bonjour ${user.prenom} ${user.nom}, <br></br> Suite à votre demande de récupération de mot de passe,
+                veuillez cliquer sur le lien ci-dessous : <br></br><a
+                    href="https://sidam.suncha.fr/api/api/deeplinking/${user.resetToken}" style="color: black"><br>
+                    Modifier mon mot de passe via mon application</a><br></br>
+
+                <br>
+            <p>Cordialement, </p> </br>
+            <div>
+                <img style="margin-top:10px;" width="80%" src="https://sidam.suncha.fr/api/PDF/signature.jpg" />
+
+                <p> <span style="color: blue;font-size: x-small;">Ce message électronique et tous les fichiers attachés
+                        qu'il
+                        contient sont
+                        confidentiels et
+                        destinés
+                        exclusivement à l'usage de la personne à laquelle ils sont adressés. Si vous avez reçu ce
+                        message
+                        par
+                        erreur, merci de le retourner à son émetteur. Les idées et opinions présentées dans ce message
+                        sont
+                        celles de son auteur, et ne représentent pas nécessairement celles de la société SIDAM ou d'une
+                        quelconque de ses filiales</span>.<span
+                        style="color: red;font-weight: bold;font-size: x-small;"> La
+                        publication,
+                        l'usage, la
+                        distribution, l'impression ou la
+                        copie non
+                        autorisée de ce message et des attachements qu'il contient sont strictement
+                        interdits.</span><br>
+                    <span style="color: blue;font-size: x-small;">
+
+                        This e-mail and any files transmitted with it are confidential and intended solely for the use
+                        of
+                        the
+                        individual to whom it is addressed.If you have received this email in error please send it back
+                        to
+                        the
+                        person that sent it to you. Any views or opinions presented are solely those of its author and
+                        do
+                        not
+                        necessarily represent those of SIDAM Company or any of its subsidiary companies.</span> <span
+                        style="color: red;font-weight: bold;font-size: x-small;"> Unauthorized
+                        publication, use, dissemination, forwarding, printing or copying of this email and its
+                        associated
+                        attachments is strictly prohibited.</span>
+                </p>
+            </div>
+        </div>
+
+</body>
+
+</html>

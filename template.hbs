@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Extension de garantie</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+
+<style type="text/css">
+    body {
+        background-image: url('https://sidam.suncha.fr/api/PDF/fond.jpg');
+        font-family: 'Poppins';
+    }
+
+    .title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        flex-direction: column;
+        background-color: #606A28;
+        width: 100%;
+        text-align: center;
+        color: white;
+        font-family: 'Poppins';
+    }
+
+    .titleb {
+        color: white
+    }
+
+    .titre {
+        text-align: center;
+        color: white
+    }
+</style>
+
+<body>
+
+    <div class=" title">
+        <div class="titleb">
+            <img style="margin-top:10px;width:40%;margin-left:17px" src="https://sidam.suncha.fr/api/PDF/logo.png" />
+            <p>
+                http://www.ste-sidam.fr<br>
+                www.info@ste-sidam.com</p>
+        </div>
+
+    </div>
+
+
+    <div>
+        <p
+            style="text-align: center;font-size:17px;marginTop:5px;color:white;width:50%,text-align:center;background-color:#606A28;">
+            Votre extension de garantie au nom de {{name}} {{prenom}}
+        </p>
+
+    </div>
+
+
+    <div class="contentB"
+        style="width:100vw;display:flex;flex-direction:row;flex-wrap:wrap;align-content:center;justify-content:center;margin-left:85px">
+
+        <div style="flex-basis:45%">
+
+            <p style="text-align: center;font-size:23px;margin-top:0px;padding:0px;font-weight:bold">Cordonnées
+                client</h4>
+
+            <p style="text-align: center;font-size:17px;margin-top:0px;padding:0px">
+                Nom : {{name}}
+            </p>
+
+            <p style="text-align: center;font-size:17px;margin-top:0px;padding:0px">
+                Prénom : {{prenom}}
+            </p>
+
+            <p style="text-align: center;font-size:17px;margin-top:0px;padding:0px">
+                Adresse: {{adresse}}
+            </p>
+
+            <p style="text-align: center;font-size:17px;margin-top:0px;padding:0px">
+                Ville : {{ville}}
+            </p>
+
+
+            <p style="text-align: center;font-size:17px;margin-top:0px;padding:0px">
+                Code postal : {{codepostal}}
+            </p>
+
+
+            <p style="text-align: center;font-size:17px;margin-top:0px;padding:0px">
+                Email : {{email}}
+            </p>
+
+
+            <p style="text-align: center;font-size:17px;margin-top:0px;padding:0px">
+                SIA : {{SIA}}
+            </p>
+
+        </div>
+
+        <div style="flex-basis:45%;margin-left:0px">
+
+            <p style="text-align: center;font-size:23px;margin-top:0px;padding:0px;font-weight:bold">Arme</h4>
+            <p style="text-align:center;font-size:17px;margin-top:0px;padding:0px">
+                Marque : <span style="color:red">{{marque}}</span>
+            </p>
+
+            <p style="text-align: center;font-size:17px;margin-top:0px;padding:0px">
+                Type: {{type}}
+            </p>
+
+            <p style="text-align:center;font-size:17px;margin-top:0px;padding:0px">
+                Modèle : <span style="color:red">{{categories}}</span>
+            </p>
+
+            <p style="text-align: center;font-size:17px;margin-top:0px;padding:0px">
+                Calibre : {{calibre}}
+            </p>
+
+            <p style="text-align: center;font-size:17px;margin-top:0px;padding:0px">
+                Série : {{serie}}
+            </p>
+
+            <p style="text-align: center;font-size:17px;margin-top:0px;padding:0px">
+                Nombre de munitions : {{munitions}}
+            </p>
+            <div
+                style="display: flex;flex-direction: row;justify-content: center; width: 100%;align-items: center;flex-wrap: wrap;">
+                <img src="https://sidam.suncha.fr/api/PDF/SELBIS.png" 
+                    style="margin-top: 15px;">
+                <img src="https://sidam.suncha.fr/api/PDF/MAG.png" height="50px" width="180px" />
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="content"
+        style="width:100vw;display:flex;flex-direction:row;flex-wrap:wrap;align-content:center;justify-content:center;margin-left:85px">
+
+
+        <div style="flex-basis:45%">
+
+            <p style="text-align: center;font-size:23px;margin-top:0px;padding:0px;font-weight:bold">Garantie</h4>
+
+            <p style="text-align: center;font-size:17px;margin-top:0px;padding:0px">
+                Garantie initiale : {{extGarantie}}
+            </p>
+
+
+            <p style="text-align: center;font-size:17px;margin-top:0px;padding:0px">
+                Nombre de garantie(s) cumulé(es) : {{cumul}}
+            </p>
+
+
+            <p style="text-align: center;font-size:17px;margin-top:0px;padding:0px">
+                Garantie actuelle : {{garantie}}
+            </p>
+
+        </div>
+
+
+        <div style="flex-basis:45%;">
+
+
+            <div
+                style="display: flex;flex-direction: row;justify-content: center; width: 100%;align-items: center;flex-wrap: wrap;">
+
+                <img src="https://sidam.suncha.fr/api/PDF/SW.png" height="50px" width="140px"
+                    style="margin-top: 15px;" />
+                <img src="https://sidam.suncha.fr/api/PDF/CZ.png" height="50px" width="140px"
+                    style="margin-top: 15px;" />
+            </div>
+            <p style="text-align:center;font-size:13px;margin-top:25px;padding:0px;font-weight:bold">
+               Édité le {{date}}.
+            </p>
+        </div>
+
+        <div style="flex-basis:100%;margin-top:0px;">
+
+            <p style="text-align:center;font-size:10px;margin-top:0px;padding:0px;font-weight:bold">
+                Conditions de cession de garantie:
+            <ul style="list-style-type: none;padding: 0;margin: 0;">
+                <li style="text-align:center;font-size:10px;margin-top:0px;padding:0px;font-weight:bold">Cas numéro
+                    1 : Je vends mon arme à un particulier. Le nouvel acquéreur doit télécharger
+                    l' application.<br>Le vendeur déclare la cession de l'arme dans son application avec l'email du
+                    nouvel
+                    acquéreur.<br>
+                    Le nouvel acquéreur télécharge l'application qui reconnaîtra son email et transférera
+                    automatiquement l'arme.</li>
+                <li style="text-align:center;font-size:10px;margin-top:10px;padding:0px;font-weight:bold">Cas numéro
+                    2 : Je cède mon arme à un armurier.<br>Le vendeur déclare la cession de l'arme dans son
+                    application.<br>Le nouvel acquéreur devra télécharger l'application, puis contacter la SIDAM par
+                    la
+                    rubrique Contact pour confirmer son acquisition et transférer l'arme dans son coffre-virtuel.
+                </li>
+            </ul>
+            </p>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
